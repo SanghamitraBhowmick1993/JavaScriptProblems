@@ -1,0 +1,103 @@
+
+console.log("Welcome to Programiz!");
+console.log(2+2);
+//datatypes
+let name = 'Sang';
+let age = 25;
+let color = 'red';
+console.log(name + ' ' + age);
+
+const range = 4; //can not change the value now
+//range =5;
+console.log(range);
+
+const numberOfDays =7;
+
+let s1 = 'hello world';
+let num = 9;
+let flag = true;
+let price;//typeOf price = undefined
+let model = null; //typeOf model = Object
+let wheels = undefined;//typeOf wheels = undefined
+console.log(s1 + num + flag + price + model + wheels);
+
+
+//dynamic typing
+let d = 'Naveen';
+d=30;
+console.log(d);
+
+//Objects:
+let user = {
+    name : 'Sang',
+    age : 30
+};
+console.log(user);
+//1. to access the property: dot notation
+console.log(user.name);
+user.age = 35;
+console.log(user.age + ' ' + user.name);
+//2. using bracket notation
+user['name'] = 'Mary';
+console.log(user.name);
+
+//Arrays: list of objects (dynamic)
+let language = ['Java','JavaScript'];
+console.log(language);
+console.log(language.length);
+language[2] = 'Ruby';
+console.log(language);
+console.log(language.length);
+console.log(language[0]);//undefined if beyond value (index out of bound) typeOf lang  = Object
+
+//Functions:
+function getName(){
+    console.log('this is my function!!');
+}
+//call the function
+getName();
+
+//parameter based function
+function greet(name,age){
+    console.log('hello ' + name + ' ' + age);
+}
+greet('Sang', 25);
+greet('Tom');//undefined for age
+greet(); //undefined
+
+//return from a function
+function add(num1,num2){
+    return num1+num2;
+}
+let sum = add(2,5);
+console.log(sum);
+console.log(add(20,20));
+
+function squareRoot(number){
+    let root = number * number;
+    return root;
+}
+console.log(squareRoot(3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+
+console.log("Welcome to JavaScript!");
+//control flows (if else)
+//switch case
+let hour = 18;
+if(hour >=6 && hour <12){
+    console.log('good morning');
+    console.log('good morning,Sang');
+}
+else if(hour >=12 &&hour <=16) console.log('good noon');
+else console.log('good evening');
+    
+//max number   
+let a = 100;
+let b =500;
+let c = 300;
+if(a>b && a>c) console.log('a is greatest');
+else if(b>c) console.log('b is greatest');
+else console.log('c is the greatest');
+
+//switch cases
+let role = 'Vendor';
+switch(role){
+    case 'Guest':
+        console.log('Guest user');
+        break;
+    case 'Admin' :
+        console.log('Admin user');
+        break;
+    case 'Vendor' :
+        console.log('Vendor user');
+        break;
+    default:
+    console.log('No user');
+    break;
+}
+//role with if else
+if(role === 'Guest') console.log('Guest user');
+else if(role ==='Admin') console.log('Admin user');
+else if(role ==='Vendor') console.log('Vendor user');
+else console.log('No user');
+
+
+
+

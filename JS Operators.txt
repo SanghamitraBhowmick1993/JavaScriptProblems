@@ -1,0 +1,103 @@
+
+console.log("Welcome to JavaScript!");
+//Arthematic //Assignment //Ternary //Comparision
+//Logical //Bitwise
+
+
+//1.Arthematic Operator
+let x =10;
+let y = 20;
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(y / x);
+console.log(2 ** 3);
+
+//++ and --
+let p =1;
+console.log(p++); 
+console.log(p);
+
+let p1=2;
+console.log(--p1);
+
+//2. Assignment Operator
+let x1=10;
+//let c = c+5; // c not defined
+let c = x+10;
+console.log(x1+c);
+
+//x = x*10;
+x*=10;
+console.log(x);
+
+//3.Comparision Operator
+let x2 =10;
+console.log(x2<=1); //false
+console.log(x2===10); //strict equality --checks type & val
+//lose equality checks only val
+console.log('1' ==1); //true (string vs num)
+console.log(true ==1);
+
+//4.Ternary Operator
+let points = 110;
+let type = points >100 ? 'gold' : 'silver';
+console.log(type);
+
+//5.Logical Operator: &&  ||  (!)
+let highIncome = true;
+let goodCredit = true;
+let eligibleForLoan = highIncome && goodCredit
+console.log(eligibleForLoan);
+
+let isActive = true;
+console.log(!isActive);
+console.log(!(10 > 5));
+
+//logical op with non boolean val : falsy(false)
+//undef, null, 0 ,false, NaN,'' 
+
+//truthy values: which are not false
+console.log(false || 'sang');
+console.log(false || 0);
+console.log(true || null);
+
+//real time ex:
+let userColor = '';
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+console.log(currentColor);
+
+//6. Bitwise Operator
+//1 = 00000001
+//2 = 00000010
+//3 = 00000011 -- |
+//0 = 00000000 -- &
+console.log(1 | 2); //3
+console.log(1 & 2); //0
+
+//Operator precedence:
+console.log((2+ 3) * 4);
+
+//swap 2 values:
+let a1 =10;
+let b1 = 20;
+let c1 = a1;
+    a1=b1;
+    b1=c1;
+console.log("a --> " + a1);
+console.log("b --> " + b1);
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

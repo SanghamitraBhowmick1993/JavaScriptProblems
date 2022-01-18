@@ -1,0 +1,26 @@
+JS --> browser language (alert/popup's)
+Browser has JS Engine - Chrome (V8 -->written by goggle-->C++) - to execute JS code
+Node.js --> JS is client (browser lang) - > node.js is server written in JS
+
+Install EDITOR:
+VS Code
+
+create index.html
+1. go to extension and type live server install and restart IDE
+2. right click on index.html and open with live server
+3. go to chrome type IP:port/index.html
+4. code written in the script section of index.html will be visible in console.log
+5. code written in the bodysection of index.html will be visible in webpage
+6. Create index.js file
+7. in index.html create <script>src="index.js"</script>
+8. js can also be executed using node.js and run [node index.js]
+
+//data types
+1. primitive data types
+--String --Number --Boolean --Undefined --Null
+2. reference data types
+---Objects --Arrays ---functions
+
+
+//Operators
+https://www.geeksforgeeks.org/check-a-number-is-prime-or-not-using-javascript/?ref=lbp
