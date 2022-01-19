@@ -1,0 +1,33 @@
+
+console.log("Enumerating properties of an Object, JS!");
+//get all properties of an object
+//check prop in an object
+const circle = {
+    radius : 1,
+    draw(){
+        console.log('draw');
+    }
+}
+//1. for -in loop:
+for(let key in circle)
+    console.log(key,circle[key]);
+    
+//2. for -of loop with keys: // of is used for arrays
+for(let key of Object.keys(circle))//object.keys returns string array 
+console.log(key);
+
+//for -of loop with entries: 
+for(let entry of Object.entries(circle))//object.keys returns string array
+console.log(entry);
+
+//3. in operator:
+//check property in an object
+if('radius' in circle)
+console.log('yes');
+
+if('price' in circle)
+console.log('yes');
+
+if('draw' in circle){
+console.log('yes');
+}

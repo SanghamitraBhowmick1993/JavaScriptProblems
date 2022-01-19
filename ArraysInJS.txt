@@ -1,0 +1,60 @@
+
+console.log("Welcome to Arrays in JS!");
+
+const num = [3,4];
+console.log('Length is ' + num.length);
+console.log(num);
+console.log(num[2]); //undefined
+
+//add an element end of array
+num.push(5,6);
+console.log(num);
+
+//add an element beginning of array
+num.unshift(1,2);
+console.log(num);
+
+//add an element middle of array
+num.splice(2,0,'a',1); //2-->for start index, 0 -->deleting index, a,1 -->values to insert
+console.log(num);
+
+//how to print all values from an array
+for(const key in num){
+    console.log(num[key]);
+}
+    console.log('******');
+
+//find elements in array : (primitive):
+const s = [1,2,3,1,4];
+console.log('Index of 1st position is ' + s.indexOf(1));
+console.log('Index of 5th position is ' +s.indexOf(5)); //-1 if not available
+console.log(s.indexOf('1')); // 1 is string value
+console.log(s.indexOf(1,s.indexOf(1)+1)); // 2nd occurance of 1
+console.log(s.indexOf(3)!==-1);//true
+console.log(s.includes(3)); //true
+
+//find elements in array : (reference type):
+//Array can have Objects..
+
+const courses = [
+    {id : 1, name: 'a'},
+    {id :2, name: 'b'}
+    ];
+console.log(courses.includes({id : 1, name: 'a'}));//false cz reference types are different
+
+const c3 = courses.find(course => course.name === 'a');
+console.log('using lambda' + c3.name);
+
+const c1 = courses.find(function(course){
+    return course.name === 'a';
+});
+console.log(c1);
+console.log(c1.name);
+
+const c2 = courses.findIndex(function(course){
+    return course.name === 'a';
+});
+console.log(c2);   
+
+
+

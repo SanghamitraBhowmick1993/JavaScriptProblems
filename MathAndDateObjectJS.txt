@@ -1,0 +1,35 @@
+
+console.log("Math and Date Object, JS!");
+/*Math.PI
+3.141592653589793
+Math.SQRT2
+1.4142135623730951
+Math.sqrt(3)
+1.7320508075688772
+Math.sqrt(9)
+3
+Math.max(1,2,3,5)
+5
+Math.min(1,2,4,5,7)
+1
+Math.pow(2,3)
+8   */
+
+function getRandomArb(min,max){
+    return Math.random() * (max-min) + min;
+}
+
+let x = getRandomArb(5,100);
+console.log(Math.floor(x)); //floor to remove decimals
+
+//Date Object
+
+const now = new Date();
+const date1 = new Date('May 9 2019 08:00');
+console.log(now);
+console.log(date1);
+console.log(now.getDate());
+console.log(now.getFullYear());
+console.log(now.toDateString());
+console.log(now.toTimeString());
+console.log(now.toISOString());

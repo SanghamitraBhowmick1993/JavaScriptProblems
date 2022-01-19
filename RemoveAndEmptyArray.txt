@@ -1,0 +1,55 @@
+
+console.log("Welcome to Remove elements and empty an Array in JS!");
+const num = [1,2,3,4,5,6];
+// remove ele in end of array
+const last = num.pop(); // for add--> push
+console.log(num);
+console.log(last);
+
+// remove ele in beginnin of array : for add-->unshift()
+const first =num.shift();
+console.log(num);
+console.log(first);
+
+// remove ele in middle of array: for add ->splice
+const middle =num.splice(3,1); // params1: index, params2: how many ele
+console.log(num);
+console.log(middle);
+
+num.splice(1); // delete all from index=1
+console.log(num);
+
+
+//empty an array
+let num1 = [1,2,3,4,5,6];
+
+//1. declare blank array
+num1 = [];
+console.log(num1);
+
+//2. using length
+num1.length=0;
+console.log(num1);
+
+let num2 = [1,2,3,4];
+let another = num2; //when copy of refernce is available, the copy still has the value
+num2 = [];
+console.log(num2);
+console.log(another);
+
+//3. using splice
+let num3 = [1,2,3,4];
+num3.splice(0,num3.length);
+console.log(num3);
+
+//4. using pop method
+let num4 = [1,2,3,4];
+while(num4.length>0){
+    num4.pop();
+}
+console.log(num4);
+
+//approch 1 and 2 are useful
+
+
+
