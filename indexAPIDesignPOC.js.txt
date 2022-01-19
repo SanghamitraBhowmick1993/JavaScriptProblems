@@ -1,0 +1,64 @@
+//1.create a folder and open folder in terminal
+//2. initaite npm package (npm init)
+//3. package.json created
+//4. Create a file index.js (APIDesign)
+//5. Use express framework(node.js webserver framework)
+//6. npm install express (node module created) for using js with express f/w
+
+const express = require('express')
+const app = express();
+
+//create user data:
+const userInfoData =[
+    {
+    id : 1,
+    firstname : 'Naveen',
+    lastname : 'K',
+    phone : 1234
+    },
+    {
+    id : 2,
+    firstname : 'Sang',
+    lastname : 'B',
+    phone : 1265
+    },
+    {
+    id : 3,
+    firstname : 'Tom',
+    lastname : 'B',
+    phone : 1298
+    },
+    ];
+    
+//create end points
+
+app.get('/api/users',function(req,res){
+    res.json(userInfoData);
+})
+
+app.get('/api/info',function(req,res){
+    res.send('welcome to JS API design');
+})
+app.get('/api/users/:id',function(req,res){
+   const id = req.params.id;
+   const user = userInfoData.find(user =>user.id ==id);
+   
+   if(user){
+       res.json(user)
+   }
+   else{
+       res.send('this user is not found');
+   }
+})
+
+//start node server
+
+const PORT = 3000;
+app.listen(PORT,function()){
+    console.log('server started.. call your api');
+}
+
+//start the server using node index.js
+//localhost:3000/api/info -->in browser
+//localhost:3000/api/users
+//localhost:3000/api/users/1
