@@ -1,0 +1,25 @@
+//take input from user
+//const num = parseInt(prompt("Enter a positive number: "));
+const num =5;
+let isPrime = true;
+
+//check if num=1
+if(num ===1){
+    console.log("Number is not Prime ");
+}
+else if(num >1){
+    //looping from 2 to num-1
+    for(let i = 2; i<num;i++){
+        if(num%i ==0){
+          isPrime= false;
+          break;
+        }
+    }
+    if(isPrime)
+    console.log(`${num} is a Prime number`);
+    else{
+            console.log(`${num} is NOT a Prime number`);
+
+    }
+}
+

@@ -1,0 +1,9 @@
+let a = 10;
+let b =20;
+let temp;
+console.log('Numbers BEFORE swap is ' + 'a = ' + a + ' b= ' + b);
+
+temp = a;
+a = b;
+b= temp;
+console.log('Numbers AFTER swap is ' + 'a = ' + a + ' b= ' + b);
